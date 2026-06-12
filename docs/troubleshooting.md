@@ -397,7 +397,7 @@ Running Puppeteer smoothly on CircleCI requires the following steps:
    entire machine (`36`) rather than the number allowed to your container (`2`).
    To fix this, set `jest --maxWorkers=2` in your test command.
 
-## Running Puppeteer in Docker
+## Running Puppeteer | Docker
 
 > 👋 We used [Cirrus Ci](https://cirrus-ci.org/) to run our tests for Puppeteer
 > in a Docker container until v3.0.x - see our historical
