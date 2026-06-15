@@ -1,9 +1,10 @@
 # Configuration
 
-By default, Puppeteer downloads and uses a specific version of Chrome so its
-API is guaranteed to work out of the box. To use Puppeteer with a different
-version of Chrome or Chromium, pass in the executable's path when creating a
-`Browser` instance:
+* ❌NO required❌
+  * Reason:🧠by default, Puppeteer downloads ALL required to work🧠
+  API is guaranteed to work out of the box. To use Puppeteer with a different
+  version of Chrome or Chromium, pass in the executable's path when creating a
+  `Browser` instance:
 
 ```ts
 const browser = await puppeteer.launch({executablePath: '/path/to/Chrome'});

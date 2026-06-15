@@ -7,26 +7,22 @@
     * allows
       * control Chrome OR Firefox, -- via --
         * [DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
+          * default -- for -- automating Chrome
         * [WebDriver BiDi](https://pptr.dev/webdriver-bidi)
+          * default -- for -- automating Firefox
     * provides
-      * HIGH-level API
+      * HIGH-level API / abstract
+        * DevTools Protocol
+        * WebDriver BiDi
     * by default,
       * runs headless (== NO UI)
 
 ## documentation
 
-* [here](docs/index.md)
-
-## Installation
-
-```bash npm2yarn
-npm i puppeteer # Downloads compatible Chrome during installation.
-npm i puppeteer-core # Alternatively, install as a library, without downloading Chrome.
-```
+* [here](docs/)
 
 ## MCP
 
-* support
-  * [`chrome-devtools-mcp`](https://github.com/ChromeDevTools/chrome-devtools-mcp)
-    * == Puppeteer-based MCP server -- for -- browser automation & debugging
-  * [WebMCP](https://pptr.dev/guides/webmcp) API
+* [`chrome-devtools-mcp`](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+  * == Puppeteer-based MCP server -- for -- browser automation & debugging
+* [WebMCP](https://pptr.dev/guides/webmcp) API

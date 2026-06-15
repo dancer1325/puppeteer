@@ -1,13 +1,18 @@
 # WebDriver BiDi support
 
-[WebDriver BiDi](https://w3c.github.io/webdriver-bidi/) is a new
-cross-browser automation protocol currently under development, aiming to
-combine the best of both WebDriver “Classic” and CDP. WebDriver BiDi
-enables bi-directional communication, making it fast by default, and it
-comes packed with low-level control.
+* [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
+  * == automation protocol
+    * NEW
+    * cross-browser
+    * goal
+      * combine the best of WebDriver “Classic” + CDP
+  * enable
+    * bi-directional communication
+  * comes packed -- with -- low-level control
 
 ## Automate with Chrome and Firefox
 
+TODO:
 Puppeteer supports WebDriver BiDi automation with Chrome and Firefox.
 When launching Firefox with Puppeteer, the WebDriver BiDi Protocol is
 enabled by default. When launching Chrome, CDP is still used by default
