@@ -51,9 +51,7 @@
 
 ## Q: Is Puppeteer a replacement for Selenium?
 
-TODO:
-Puppeteer is a Node.js based reference implementation of how to automate browsers
-with CDP and WebDriver BiDi - the same web standard the Selenium project is also
+CDP and WebDriver BiDi - the same web standard the Selenium project is also
 contributing to.
 
 * vs Selenium
@@ -65,6 +63,7 @@ contributing to.
   * tooling -- to -- orchestrate automation at large
     * Selenium Grid
     * TODO: Puppeteer
+  * BOTH contribute to CDP &
 
 ## Q: Why doesn’t Puppeteer v.XXX work with a certain version of Chrome or Firefox?
 
