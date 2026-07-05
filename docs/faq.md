@@ -51,9 +51,6 @@
 
 ## Q: Is Puppeteer a replacement for Selenium?
 
-CDP and WebDriver BiDi - the same web standard the Selenium project is also
-contributing to.
-
 * vs Selenium
   * bindings -- for -- languages
     * Puppeteer
@@ -63,15 +60,17 @@ contributing to.
   * tooling -- to -- orchestrate automation at large
     * Selenium Grid
     * TODO: Puppeteer
-  * BOTH contribute to CDP &
+  * BOTH contribute to CDP & WebDriver BiDi
 
-## Q: Why doesn’t Puppeteer v.XXX work with a certain version of Chrome or Firefox?
+## Q: Why does NOT Puppeteer v.XXX work --with a -- CERTAIN version of Chrome or Firefox?
 
-Every Puppeteer release is tightly bundled with a specific browser release
-to ensure compatibility with the implementation of the underlying protocols,
-the Chrome DevTools Protocol and WebDriver BiDi.
+* Puppeteer release 
+  * is tightly bundled -- with a -- SPECIFIC browser release
+    * Reason: 🧠
+      * ensure compatibility -- with the -- implementation of the underlying protocols
+(Chrome DevTools Protocol & WebDriver BiDi)
+        * OTHERWISE, POSSIBLE breaking changes 🧠
 
-This is to prevent changes in either [Chrome](https://pptr.dev/supported-browsers#chrome) or [Firefox](https://pptr.dev/supported-browsers#firefox) from unexpectedly breaking Puppeteer.
 
 ## Q: Which Chrome and Firefox version does Puppeteer use?
 
@@ -79,17 +78,18 @@ This is to prevent changes in either [Chrome](https://pptr.dev/supported-browser
 
 ## Q: What’s considered a “Navigation”?
 
-From Puppeteer’s standpoint, **“navigation” is anything that changes a page’s
-URL**. Aside from regular navigation where the browser hits the network to fetch
-a new document from the web server, this includes
-[anchor navigations](https://www.w3.org/TR/html5/single-page.html#scroll-to-fragid)
-and [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
-usage.
+* “navigation” 
+  * == ANYTHING / changes a page’s
+URL 
+    * _Examples:_ 
+      * regular navigation | browser fetchs
+a new document
+      * [anchor navigations](https://www.w3.org/TR/html5/single-page.html#scroll-to-fragid)
+      * [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
+    * -> Puppeteer works seamlessly -- with --
+SPA
 
-With this definition of “navigation,” **Puppeteer works seamlessly with
-single-page applications.**
-
-## Q: What’s the difference between a “trusted" and "untrusted" input event?
+## Q: “trusted" input event vs "untrusted" input event
 
 In browsers, input events could be divided into two big groups: trusted vs.
 untrusted.
@@ -121,6 +121,9 @@ await page.evaluate(() => {
 
 ## Q: Does Puppeteer support media and audio playback?
 
-Puppeteer uses [Chrome for Testing](https://developer.chrome.com/blog/chrome-for-testing/) binaries
-by default which ship with proprietary codecs support starting from
-[M120](https://chromiumdash.appspot.com/commit/12d607016c31ea13579e897740c765be189ed6eb).
+* Yes
+  * -- thanks to -- [Chrome for Testing](https://developer.chrome.com/blog/chrome-for-testing/) binaries
+by default which ship with proprietary codecs 
+    * Reason: 🧠's binariew contain
+    * ⚠️requirements: 
+[M120](https://chromiumdash.appspot.com/commit/12d607016c31ea13579e897740c765be189ed6eb)⚠️
