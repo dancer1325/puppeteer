@@ -122,8 +122,7 @@ await page.evaluate(() => {
 ## Q: Does Puppeteer support media and audio playback?
 
 * Yes
-  * -- thanks to -- [Chrome for Testing](https://developer.chrome.com/blog/chrome-for-testing/) binaries
-by default which ship with proprietary codecs 
-    * Reason: 🧠's binariew contain
+  * -- thanks to -- [Chrome for Testing](https://developer.chrome.com/blog/chrome-for-testing/) 
+    * Reason: 🧠's binariew contain códecs 🧠
     * ⚠️requirements: 
 [M120](https://chromiumdash.appspot.com/commit/12d607016c31ea13579e897740c765be189ed6eb)⚠️
